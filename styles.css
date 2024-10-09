@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+#player-info {
+    margin-top: 20px;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+#strict-mode {
+    margin-right: 20px;
+}
+
+#simon-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 320px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.simon-btn {
+    width: 120px;
+    height: 120px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.1s, opacity 0.2s;
+    border-radius: 60px 0;
+}
+
+.simon-btn:hover {
+    opacity: 0.8;
+}
+
+.simon-btn:active {
+    transform: scale(0.95);
+}
+
+.top-left {
+    background-color: #28a745;
+}
+
+.top-right {
+    background-color: #dc3545;
+}
+
+.bottom-left {
+    background-color: #ffc107;
+}
+
+.bottom-right {
+    background-color: #007bff;
+}
+
+.level-count, #record, #all-records {
+    color: #fff;
+    background-color: #333;
+    padding: 0.5rem 1.5rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#all-records {
+    width: 100%;
+    max-width: 300px;
+}
+
+#record-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#record-list li {
+    background: #444;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
